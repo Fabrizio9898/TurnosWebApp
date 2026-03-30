@@ -1,0 +1,24 @@
+# Dependencias (Cubre la raíz y cualquier subcarpeta que se te escape)
+node_modules/
+**/node_modules/
+
+# Variables de entorno (Red de seguridad máxima)
+.env
+.env.*
+!.env.example
+
+# Logs de errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos basura del Sistema Operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Carpetas de compilación globales (por si armás scripts en la raíz)
+dist/
+build/
+.turbo/
