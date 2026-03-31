@@ -1,9 +1,5 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
-import { config as dotenvConfig } from 'dotenv';
 import { registerAs } from '@nestjs/config';
-
-dotenvConfig({ path: '.env' });
-
 
 
 const config: DataSourceOptions = {
