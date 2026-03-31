@@ -1,6 +1,12 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
 import { registerAs } from '@nestjs/config';
+import { config as dotenvConfig } from 'dotenv';
 
+// Forzamos la carga del .env antes de hacer cualquier otra cosa
+dotenvConfig({ path: '.env' });
+
+// Agregamos un log para asegurarnos de que no esté leyendo undefined
+console.log('🚀 Conectando a Supabase URL:', process.env.DATABASE_URL ? 'URL Cargada OK' : '¡ERROR! URL UNDEFINED');
 
 const config: DataSourceOptions = {
   type: 'postgres',

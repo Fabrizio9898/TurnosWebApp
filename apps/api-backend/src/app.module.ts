@@ -4,7 +4,6 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import dbConfig from './config/db.config';
 import { JwtModule } from '@nestjs/jwt';
 
-
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true, load: [dbConfig] }),
@@ -18,13 +17,10 @@ import { JwtModule } from '@nestjs/jwt';
       global: true,
       signOptions: { expiresIn: '1h' },
       secret: process.env.JWT_SECRET
-    }),
+    })
   ],
 
   controllers: [],
-
-
-  
   providers: []
 })
 export class AppModule {}

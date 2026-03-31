@@ -1,0 +1,22 @@
+export enum DoctorSpecialityEnum {
+  GENERAL_MEDICINE = 'Medicina General',
+  PEDIATRICS = 'Pediatría',
+    DERMATOLOGY = 'Dermatología',
+    CARDIOLOGY = 'Cardiología',
+    ORTHOPEDICS = 'Ortopedia',
+    GYNECOLOGY = 'Ginecología',
+    PSYCHIATRY = 'Psiquiatría',
+    ENDOCRINOLOGY = 'Endocrinología',
+    NEUROLOGY = 'Neurología',
+    GASTROENTEROLOGY = 'Gastroenterología',
+    UROLOGY = 'Urología',
+    OPHTHALMOLOGY = 'Oftalmología',
+    OTOLARYNGOLOGY = 'Otorrinolaringología',
+    RHEUMATOLOGY = 'Reumatología',
+    HEMATOLOGY = 'Hematología',
+    ONCOLOGY = 'Oncología',
+    INFECTIOUS_DISEASES = 'Enfermedades Infecciosas',
+    ALLERGY_AND_IMMUNOLOGY = 'Alergia e Inmunología',
+    NEPHROLOGY = 'Nefrología',
+    PULMONOLOGY = 'Neumología'
+}
