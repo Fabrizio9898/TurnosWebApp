@@ -6,10 +6,10 @@
     "apps/*",
     "packages/*"
   ],
- "scripts": {
-    "dev:api": "npm run start:dev --workspace=apps/api-nestjs",
+  "scripts": {
+    "dev:api": "npm run start:dev --workspace=apps/api-backend",
     "dev:web": "npm run dev --workspace=apps/web-pacientes",
-    "dev:dash": "npm run dev --workspace=apps/dashboard-docs"
+    "dev:dash": "npm run dev --workspace=apps/onboardingdocs"
   },
   "keywords": [],
   "author": "",
